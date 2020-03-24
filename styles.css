@@ -39,7 +39,7 @@ body::before {
     width: 100%;
     justify-items: center;
     color: #1e3a35;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: auto;
     grid-gap: 1%;
     grid-template-areas:
