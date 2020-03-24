@@ -2,14 +2,53 @@
 <html>
     <div id="main">
         <head>
-            <div id="loadOverlay" style="background-color: white; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
+            <!-- <div id="loadOverlay" style="background-color: white; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div> -->
             <link rel="stylesheet" href="styles.css">
             <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-            <title id="title">abc</title>
+            <h1><title id="TITLE">Rocky River Liar's Poker</title></h1>
         </head>
         <body>
-
+            <div id="container-top">
+                <div id="header">
+                    <h1 id="title">Rocky River Liar's Poker</h1>
+                    <p id="description"><br>Please sign up below to enter our monthly game...</p>
+                </div>
+                <div id="form">
+                    <form id="survey-form">
+                        <label for="name" id="name-label">Name</label>
+                        <br>
+                        <input id="name" required type="text" placeholder="Johnathan Doemeister">
+                        <br> <br>
+                        <label for="email" id="email-label">E-mail</label>
+                        <br>
+                        <input id="email" required type="email" placeholder="jon.doe@doughboy.org">
+                        <br> <br>
+                        <label for="number" id="number-label">Years Lived in River</label>
+                        <br>
+                        <input id="number" type="number" min="0" max="100" placeholder="1">
+                        <br> <br>
+                        <label for="dropdown" id="dropdown-label">Neighborhood</label>
+                        <br>
+                        <select id="dropdown" name="neighborhood">
+                            <option value="Beachwood">Beachwood</option>
+                            <option value="Downtown">Downtown</option>
+                            <option value="Hilliard">Hilliard</option>
+                            <option value="Library">Library</option>
+                        </select>
+                        <br> <br>
+                        <input type="radio" id="owner" name="own-rent" value="owner"><label for="owner">Own</label>
+                        <input type="radio" id="renter" name="own-rent" value="renter"><label for="renter">Rent</label>
+                        <br> <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div id="sidebar-l"></div>
+                <div id="sidebar-r"></div>
+                <div id="footer">
+                    <p>Please do not submit personal information to this form. This is a demo site.</p>
+                </div>
+            </div>
         </body>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </html>
+</html>
